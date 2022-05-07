@@ -1,0 +1,177 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+body{
+    font-family: var(--font-sans);
+    background-image: url(../img/forest.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+main{
+    border-radius: var(--radius-4);
+    border: var(--border-1) solid var(--gray-1);
+    box-shadow: var(--shadow-3);
+    width: 500px;
+}
+
+h1, .inputfield, .footer{
+    text-align: center;
+    font-weight: var(--font-weight-5);
+}
+
+h1{
+    font-size: var(--font-size-6);
+    margin: 0 0 25px 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+    padding: 10px;
+    line-height: var(--font-lineheight-3)
+}
+
+button{
+    border-radius: var(--radius-3);
+    padding: 0.3em 0.7em;
+    margin: 0.3em 0.7em;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.493);
+    
+}
+
+/* Input  */
+
+.wrapper .inputField{
+    display: flex;
+    height: 45px;
+}
+
+.inputField{
+    padding-left: 10px;
+}
+
+.inputField button{
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius-round);
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.inputField button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.inputField input{
+    width: 85%;
+    height: 95%;
+    border-radius: var(--radius-round);
+}
+
+.inputField span:hover{
+    color: var(--green-6);
+}
+
+
+/* Task list */
+
+.theList{
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.toDoList li{
+    text-decoration: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.247);
+    border-radius: var(--radius-round);
+    margin-bottom: 8px;
+}
+
+.toDoList li span{
+    position: absolute;
+    right: 10px;
+    top: 20%;
+}
+
+.toDoList li span:hover{
+    color: var(--red-7);
+    cursor: pointer;
+}
+
+.toDoList{
+    max-height: 232px;
+    overflow-y: auto;
+}
+
+
+/* Task list */
+
+.theList{
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.toDoList li{
+    text-decoration: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.247);
+    border-radius: var(--radius-round);
+    margin-bottom: 8px;
+    padding: 0 10px;
+}
+
+.toDoList li span{
+    position: absolute;
+    right: 10px;
+    top: 20%;
+}
+
+.toDoList li span:hover{
+    color: var(--red-7);
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+.footer{
+    margin: 10px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.footer button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.footer button:hover{
+    background-color: var(--red-9);
+}
+
+/* Glassmorphism Effect */
+
+.card {
+    backdrop-filter: blur(16px) saturate(143%);
+    -webkit-backdrop-filter: blur(16px) saturate(143%);
+    background-color: rgba(17, 25, 40, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
