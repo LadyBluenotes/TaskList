@@ -3,7 +3,6 @@
 A simple task list created using only HTML, CSS and JavaScript.
 
 
-https://user-images.githubusercontent.com/98355961/163289824-61098300-1bcf-466f-aadb-76b56a64e292.mp4
 
 See the live site [here](https://peacefultasks.netlify.app/)
 
