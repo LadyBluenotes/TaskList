@@ -80,21 +80,5 @@ deleteEverything.onclick = () => {
     showTask();
 }
 
-// // upon pressing the checkbox, the task is completed
-
-// function completedTask(){
-    
-// }
-
-// // upon pressing the edit button, the task is editable
-
-// function editTask(){
-    
-// }
-
-// // upon pressing the save or enter button, the task is saved
-
-// // update pending tasks when a tasks is added or removed
-
 
 
